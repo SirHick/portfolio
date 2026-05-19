@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: #13293d;
+    color: #ffffff;
+    line-height: 1.6;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #006494;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.256);
+    position: sticky;
+    top: 0;
+    z-index: 1000;/*garante que o menu fique acima de todos os elementos*/
+}
+.logotipo{
+    font-size: 35px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+.logotipo span{
+    color: #003a5b;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.6s;
+}
+nav ul li a:hover{
+    color: #1b98e0;
+}
+/*Conteudo principal*/
+.secao-principal{
+    display: flex; /*divide a tela entre texto em imagem*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+}
+
+.texto-apresentacao{
+    max-width: 400px;
+}
+
+.texto-apresentacao .saudacao{
+    color: #1092cf;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.texto-apresentacao h1{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.texto-apresentacao h1 span{
+    color: #1b98e0;
+}
+.texto-apresentacao p{
+    color:#bdbdbd;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+        /* GRUPO DE BOTÕES */
+        .grupo-botoes {
+            display: flex; /* Coloca os botões lado a lado */
+            gap: 20px; /* Espaço entre os dois botões */
+        }
+
+        .botao {
+            padding: 12px 30px; /* Espaçamento interno dos botões */
+            border-radius: 50px; /* Deixa as pontas dos botões arredondadas */
+            text-decoration: none; /* Remove sublinhado do botão */
+            font-weight: bold; /* Texto do botão em negrito */
+            transition: 0.3s; /* Transição suave de cor ao passar o mouse */
+            display: inline-block; /* Permite aplicar margens e padding corretamente */
+        }
+
+        .botao-contratar {
+            background-color: #1B98E0; /* Cor de fundo do botão "Contrate-me" */
+            color: #13293D; /* Cor do texto escura para contraste */
+        }
+
+        .botao-contratar:hover {
+            background-color: #E8F1F2; /* Muda para cinza claro no mouseover */
+        }
+
+        .botao-trabalhos {
+            border: 2px solid #247BA0; /* Apenas borda no botão secundário */
+            color: #ffffff; /* Texto branco */
+        }
+
+        .botao-trabalhos:hover {
+            background-color: #247BA0; /* Fica preenchido com azul ao passar o mouse */
+        }
+
+        /* IMAGEM DE PERFIL */
+        .area-imagem {
+            position: relative; /* Base para posicionar elementos internos */
+            width: 400px; /* Largura da área da imagem */
+            height: 400px; /* Altura da área da imagem */
+        }
+
+        .moldura-circular {
+            width: 100%; /* Ocupa 100% da largura da area-imagem */
+            height: 100%; /* Ocupa 100% da altura da area-imagem */
+            background-color: #1B98E0; /* Cor de fundo atrás da foto */
+            border-radius: 50%; /* Transforma o quadrado em um círculo perfeito */
+            overflow: hidden; /* Corta qualquer parte da imagem que saia do círculo */
+            display: flex; /* Ajuda no alinhamento da imagem */
+            justify-content: center; /* Alinha a imagem horizontalmente */
+            align-items: flex-end; /* Alinha a imagem à base do círculo */
+            border: 8px solid #006494; /* Adiciona uma borda grossa circular */
+        }
+
+.moldura-circular img {
+    width: 100%; /* Faz a imagem preencher a largura */
+    height: 100%; /* Faz a imagem preencher a altura */
+    object-fit: cover; /* Ajusta a foto para preencher o círculo sem esticar */
+}
+
+/*Rodapé (footer)*/
+footer{
+    background-color: #006494;
+    padding: 40px 8%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.conteudo-rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.navegacao{
+    margin: 15px 0;
+}
+
+.navegacao a{
+    color: #E8F1F2;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 17px;
+}
+
+.navegacao a:hover{
+    color: #ada9a9;
+}
+
+.direitos-autorais{
+    color: #dde2e2b3;
+    font-size: 12px;
+
+}
